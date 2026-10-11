@@ -29,8 +29,11 @@ public class Product implements Comparable<Product>
     } 
     public static void main(String[] args) {
         Product p1 = new Product(11,"Face-Cream",259.99);
-        Product p2 = new Product(11,"Face-Cream",259.99);
+        Product p2 = new Product(12,"helleocare",399.99);
+        Product p3 = new Product(11,"Face-Cream",259.99);
+       
         // Comparable<Product> comp = new al.Product();
         System.out.println(p1.compareTo(p2));
+        System.out.println(p1.compareTo(p3));
     }
 }
