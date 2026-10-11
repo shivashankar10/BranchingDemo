@@ -1,3 +1,4 @@
+
 public class Product implements Comparable<Product>
 {
 	int PId;
@@ -25,5 +26,11 @@ public class Product implements Comparable<Product>
 //    	    else {
 //    	    	    return -1;
 //    	    }
-    }    
+    } 
+    public static void main(String[] args) {
+        Product p1 = new Product(11,"Face-Cream",259.99);
+        Product p2 = new Product(11,"Face-Cream",259.99);
+        // Comparable<Product> comp = new al.Product();
+        System.out.println(p1.compareTo(p2));
+    }
 }
